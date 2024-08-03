@@ -128,3 +128,5 @@ getgenv().Ceramp_Private = {
 
     }
 }
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c2c6ddd482f94f34c85f1240baa4fb12.lua"))()
