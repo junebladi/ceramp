@@ -44,50 +44,37 @@
 ╚█████╔╝███████╗██║░░██║██║░░██║██║░╚═╝░██║██║░░░░░
 ░╚════╝░╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░░░░--]]
 
-script_key="keyhere";
 getgenv().Ceramp_Private = {
-    ["Silent"] = {
-    ['Enabled'] = true, 
-    ["Keybind"] = Enum.KeyCode.P,
-    ['Prediction'] = 0.121,
-    ['WallCheck'] = true,
-    ['Part'] = "HumanoidRootPart",
-    ['Nearest'] = true, --
-    ['Resolver'] = true,
-    ['AirPrediction'] = 0.123,
-    ['PredictMovement'] = true,
-
-    ['FieldOfView'] = {
-        ['FOV'] = false,
-        ['UseFOV'] = true,
-        ['Radius'] = 150,
-        ['FovThickness'] = 2,
-        ['FovTransparency'] = 0.2,
-        ['Color'] = Color3.fromRGB(0,0,0),
-        ['Filled'] = true,
-        ['Rainbow'] = false,
-  },   
-},
-
-        ["Aimbot"] = {
-        ['Keybind'] = Enum.KeyCode.C,
-        ['PredX'] = 0.123,
-        ['PredY'] = 0.05,
+    ['Silent Aim'] = {
+        ['Enabled'] = true,
+        ['Prediction'] = 0.122,
         ['Part'] = "HumanoidRootPart",
-        ['SmoothingValue'] = 0.1,
-        ['Shake'] = 0.1, 
-        ['AirCheck'] = true,
-        ['Resolver'] = true,
-        ['UseCircleRadius'] = false,
-        ['UnlockOnTargetDeath'] = true,
-        ['UnlockOnOwnDeath'] = true,
-        ['AirSmoothing'] = 0.1,
-
+        ['EnableJumpPart'] = true,
+        ['JumpPart'] = "Head",
+        ['KOCheck'] = true,
+        ['Sync Camlock'] = true,
+        ['Field Of View'] = {
+            ['Visible'] = false,
+            ['Color'] = Color3.new(255, 255, 255),
+            ['Radius'] = 180,
+            ['Transparency'] = 0.07
         },
+    },
 
-        ["Visuals"] = {
-        ['Tracer'] = false, -- // For Silent Aim
-
+    ["Camlock"] = {
+        ['Enabled'] = true,
+        ['Keybind'] = "C",
+        ['Prediction'] = 0.122,
+        ['Part'] = "HumanoidRootPart",
+        ['EnableJumpPart'] = true,
+        ['JumpPart'] = "Head",
+        ['Easing'] = Enum.EasingStyle.Exponential,
+        ['Smoothness'] = 0.04,
+        ['Field Of View'] = {
+            ['Visible'] = false,
+            ['Color'] = Color3.new(255, 255, 255),
+            ['Radius'] = 90,
+            ['Transparency'] = 0.07
         },
 
         ["Miscellaneous"] = {
@@ -98,23 +85,15 @@ getgenv().Ceramp_Private = {
         
         },
 
-        ["Textures"] = {
-            ['Enabled'] = false,
-            ['Material'] = 'Brick', -- // ForceField , Brick , And More Leave False If You Dont Know What Your Doing
-            ['Color'] = Color3.fromRGB(255, 198, 254),
-
-        },
-
         ["Extra"] = {
             ['UnlockFPS'] = true, -- // Unlocks your fps.
-            ['FPSBoost'] = false, -- // Turns On Low GFX
+            ['FPSBoost'] = true, -- // Turns On Low GFX
             ['Limit'] = 850 -- // Limit Of The FPS You Want
 
         },
 
         ["AutoPrediction"] = {
             ['Enabled'] = false,
-
             ['Ping_10'] = 0.1000,
             ['Ping_20'] = 0.1100,
             ['Ping_30'] = 0.1200,
@@ -135,14 +114,17 @@ getgenv().Ceramp_Private = {
             ['Ping_180'] = 0.1670,
             ['Ping_190'] = 0.1805,
             ['Ping_200'] = 0.1850,
-        
-        
-    
-        
-    
 
-    
         },
-    },
-}
+        ["Saftey"] = {
+            ['AntiCurve'] = true,
+            ['AntiAimViewer'] = true,
+            
+        
+        
 
+            },
+        },
+
+    }
+}
