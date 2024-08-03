@@ -43,7 +43,7 @@
 ██║░░██╗██╔══╝░░██╔══██╗██╔══██║██║╚██╔╝██║██╔═══╝░
 ╚█████╔╝███████╗██║░░██║██║░░██║██║░╚═╝░██║██║░░░░░
 ░╚════╝░╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░░░░--]]
-script_key="keyhere";
+script_key="puturkeyhere";
 getgenv().Ceramp_Private = {
     ['Silent Aim'] = {
         ['Enabled'] = true,
@@ -118,7 +118,6 @@ getgenv().Ceramp_Private = {
         },
         ["Saftey"] = {
             ['AntiCurve'] = true,
-            ['AntiAimViewer'] = true,
             
         
         
