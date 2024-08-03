@@ -1,3 +1,11 @@
+
+--// added by @junebladi 
+
+--// hc support
+
+--// anti aimveiewer
+--// more coming soon niggers
+
 --[[
 ⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠤⠤⠠⡖⠲⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠐⠀⠀⠀
 ⠀⠀⠀⠀⠀⡠⠶⣴⣶⣄⠀⠀⠀⢀⣴⣞⣼⣴⣖⣶⣾⡷⣶⣿⣿⣷⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠄⠀⠉⠀⠀⠀⠀
@@ -43,7 +51,7 @@
 ██║░░██╗██╔══╝░░██╔══██╗██╔══██║██║╚██╔╝██║██╔═══╝░
 ╚█████╔╝███████╗██║░░██║██║░░██║██║░╚═╝░██║██║░░░░░
 ░╚════╝░╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░░░░--]]
-
+script_key="keyhere";    --// this set is silent only
 getgenv().Ceramp_Private = {
     ['Silent Aim'] = {
         ['Enabled'] = true,
@@ -52,7 +60,7 @@ getgenv().Ceramp_Private = {
         ['EnableJumpPart'] = true,
         ['JumpPart'] = "Head",
         ['KOCheck'] = true,
-        ['SyncCamlock'] = false,
+        ['SyncCamlock'] = false, --// false = only silent 
         ['Field Of View'] = {
             ['Visible'] = false,
             ['Color'] = Color3.new(255, 255, 255),
@@ -84,6 +92,7 @@ getgenv().Ceramp_Private = {
             ['Keybind'] = Enum.KeyCode.C,
         
         },
+
 
         ["AutoPrediction"] = {
             ['Enabled'] = false,
