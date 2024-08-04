@@ -1,10 +1,4 @@
 
---// added by @junebladi 
-
---// hc support
-
---// anti aimveiewer
---// more coming soon niggers
 
 --[[
 ⠀⠀⠀⠀⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡀⠤⠤⠠⡖⠲⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠐⠀⠀⠀
@@ -120,7 +114,6 @@ getgenv().Ceramp_Private = {
         },
         ["Saftey"] = {
             ['AntiCurve'] = true,
-            ['AntiAimViewer'] = true,
             
         
         
