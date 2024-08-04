@@ -70,7 +70,6 @@ getgenv().Ceramp_Private = {
         ['Keybind'] = "C",
         ['Prediction'] = 0.122,
         ['Part'] = "HumanoidRootPart",
-        ['Key'] = "Q",
         ['EnableJumpPart'] = true,
         ['JumpPart'] = "Head",
         ['Easing'] = Enum.EasingStyle.Exponential,
