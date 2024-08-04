@@ -45,7 +45,8 @@
 ██║░░██╗██╔══╝░░██╔══██╗██╔══██║██║╚██╔╝██║██╔═══╝░
 ╚█████╔╝███████╗██║░░██║██║░░██║██║░╚═╝░██║██║░░░░░
 ░╚════╝░╚══════╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░░░░--]]
-script_key="keyhere";    --// this set is silent only
+
+script_key="keyhere"; 
 getgenv().Ceramp_Private = {
     ['Silent Aim'] = {
         ['Enabled'] = true,
@@ -53,43 +54,39 @@ getgenv().Ceramp_Private = {
         ['Part'] = "HumanoidRootPart",
         ['EnableJumpPart'] = true,
         ['JumpPart'] = "Head",
+        ['Sync Camlock'] = true,
         ['KOCheck'] = true,
-        ['SyncCamlock'] = false, --// false = only silent 
+
         ['Field Of View'] = {
             ['Visible'] = false,
             ['Color'] = Color3.new(255, 255, 255),
             ['Radius'] = 180,
             ['Transparency'] = 0.07
-        },
-    },
+},
+},
 
-    ["Camlock"] = {
+    ['Camlock'] = {
         ['Enabled'] = true,
         ['Keybind'] = "C",
         ['Prediction'] = 0.122,
         ['Part'] = "HumanoidRootPart",
+        ['Key'] = "Q",
         ['EnableJumpPart'] = true,
         ['JumpPart'] = "Head",
         ['Easing'] = Enum.EasingStyle.Exponential,
         ['Smoothness'] = 0.04,
+
         ['Field Of View'] = {
-            ['Visible'] = false,
+            ['Visible'] = true,
             ['Color'] = Color3.new(255, 255, 255),
             ['Radius'] = 90,
             ['Transparency'] = 0.07
-        },
 
-        ["Miscellaneous"] = {
-        ["Game Crash"] = { -- // Only Affects YOUR Game
-            ['Enabled'] = false,
-            ['Type'] = "Legit",  -- // Only "Legit" For Now
-            ['Keybind'] = Enum.KeyCode.C,
-        
-        },
-
+},
 
         ["AutoPrediction"] = {
             ['Enabled'] = false,
+
             ['Ping_10'] = 0.1000,
             ['Ping_20'] = 0.1100,
             ['Ping_30'] = 0.1200,
@@ -110,18 +107,10 @@ getgenv().Ceramp_Private = {
             ['Ping_180'] = 0.1670,
             ['Ping_190'] = 0.1805,
             ['Ping_200'] = 0.1850,
-
-        },
-        ["Saftey"] = {
-            ['AntiCurve'] = true,
-            
         
-        
-
-            },
         },
-
-    }
+    },
 }
+
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/c2c6ddd482f94f34c85f1240baa4fb12.lua"))()
